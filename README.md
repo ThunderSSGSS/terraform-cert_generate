@@ -14,7 +14,7 @@ The module was tested using:
 ### Creating a certificate with 2048 bits RSA key
 ```hcl
 module "cert_example" {
-    source              = ...
+    source              = "github.com/ThunderSSGSS/terraform-cert_generate"
     # Subjects
     common_name         = "Certificate_Example"
     organization        = "Example"
@@ -31,7 +31,7 @@ module "cert_example" {
 ### Creating a certificate with 4096 bits RSA key
 ```hcl
 module "cert_example" {
-    source              = ...
+    source              = "github.com/ThunderSSGSS/terraform-cert_generate"
     rsa_key_bits        = 4096
     # Subjects
     common_name         = "Certificate_Example"
